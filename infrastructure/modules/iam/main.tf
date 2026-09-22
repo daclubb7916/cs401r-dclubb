@@ -85,7 +85,10 @@ resource "aws_iam_policy" "ml_engineer" {
           "sagemaker:ListApps",
           "sagemaker:CreateApp",
           "sagemaker:DeleteApp",
-          "sagemaker:CreatePresignedDomainUrl"
+          "sagemaker:CreatePresignedDomainUrl",
+          "sagemaker:AddTags",
+          "sagemaker:DeleteTags",
+          "sagemaker:ListTags"
         ]
 
         Resource = [
